@@ -2,7 +2,7 @@
 ## 🌐 Live Demo
 
 View the live project here:  
-[Pricing Table Live](https://jcz-1.github.io/pricing-table/)
+[Pricing Table Live](https://jcz-1.github.io/price-table-ui/)
 
 
 ## 🛠️ Technologies Used
