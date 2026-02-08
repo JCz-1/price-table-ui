@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+ul li {
+  font-weight: 600;
+  font-size: 1rem;
+}
+ul li a {
+  text-decoration: none;
+  color: #888888;
+  padding: 5rem 2rem;
+}
+ul li .download {
+  border: 1px solid white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 22px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+h1.pricing {
+  color: white;
+  font-size: clamp(2rem, 12vw, 7rem);
+  margin-bottom: clamp(0.7rem, 1.4vw, 1rem);
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 0.2rem;
+}
+
+.price-plans {
+  padding-inline: clamp(1rem, 92.5vw, 1.25rem);
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.2rem, 4vw, 2.2rem);
+}
+.plan-features {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  line-height: 2;
+  color: white;
+}
+.plan-title {
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.price-value {
+  color: white;
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.basic-plans {
+  border: 1px solid rgba(56, 56, 56, 0.4);
+  border-radius: 12px;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  padding-bottom: none;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(5px);
+  max-width: 400px;
+  margin-inline: auto;
+  width: 100%;
+}
+.pro-plans {
+  background-color: rgba(9, 28, 24, 0.4);
+  backdrop-filter: blur(9px);
+  border: 1px solid rgba(55, 190, 170, 0.4);
+  border-radius: 12px;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  padding-bottom: none;
+  box-shadow:
+    4px 0 20px 0 rgba(61, 187, 168, 0.288),
+    -4px 0 20px 0 rgba(60, 187, 168, 0.226);
+  max-width: 400px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+/* -------------------------------- */
+.basic-pricing p:first-child {
+  font-size: 1.8rem;
+  color: #d6d6d6;
+  margin-bottom: 0.1rem;
+}
+.basic-pricing p:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: rgb(70, 70, 70);
+}
+.basic-pricing p:nth-child(3) {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.basic-pricing p:nth-child(4) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(70, 70, 70);
+  margin-bottom: 25px;
+}
+.hr::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: rgb(29, 29, 29, 0.2);
+  height: 2px;
+  margin-top: 25px;
+}
+.basic-details {
+  font-size: 1.2vw;
+  line-height: 1.8;
+  color: rgb(95, 95, 95);
+  font-weight: bold;
+}
+
+.basic-details a {
+  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border: 1px solid rgba(41, 41, 41, 0.4);
+  color: white;
+  background-color: rgba(27, 27, 27, 0.5);
+  border-radius: 22px;
+  padding: 0.4rem 0;
+}
+
+/* ----------------------------------- */
+.pro-pricing div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.1rem;
+}
+.pro-pricing p:first-child {
+  font-size: 1.4rem;
+}
+.pro-pricing p:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+  margin-bottom: 0.2rem;
+}
+.pro-pricing p:nth-child(3) {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.pro-pricing p:nth-child(4) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+  margin-bottom: 25px;
+}
+
+.plan-features a {
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border: 1px solid rgba(55, 166, 149, 0.4);
+  color: rgb(0, 29, 24);
+  background-color: rgba(60, 185, 167, 1);
+  border-radius: 22px;
+  padding: 0.25rem 0;
+  margin-top: 2rem;
+}
+.plan-features a:hover {
+  background-color: rgba(60, 185, 167, 0.8);
+  border: 1px solid rgba(55, 166, 149, 0.8);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* responsive */
+@media (min-width: 1000px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  ul {
+    display: none;
+  }
+}
